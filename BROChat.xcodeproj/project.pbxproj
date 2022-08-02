@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495FCA1555DE19A4F91E8B57 /* Pods_BROChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3940014C3F5B5FD1A3449D1 /* Pods_BROChat.framework */; };
 		7D08374F2893E4280091E803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08374E2893E4280091E803 /* AppDelegate.swift */; };
 		7D0837512893E4280091E803 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837502893E4280091E803 /* SceneDelegate.swift */; };
 		7D0837532893E4280091E803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837522893E4280091E803 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		7D0837662893E42F0091E803 /* BROChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837652893E42F0091E803 /* BROChatTests.swift */; };
 		7D0837702893E42F0091E803 /* BROChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08376F2893E42F0091E803 /* BROChatUITests.swift */; };
 		7D0837722893E42F0091E803 /* BROChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */; };
+		7D479E56289951340097A0CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D479E55289951340097A0CF /* GoogleService-Info.plist */; };
+		7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7D54491E28991DAB00291A35 /* BROChat.xcworkspace */; };
+		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
+		AD5E17179B4EDFA767A8B71F /* Pods_BROChat_BROChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C964E5B36473DD60FC59C2 /* Pods-BROChat-BROChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChat-BROChatUITests.release.xcconfig"; path = "Target Support Files/Pods-BROChat-BROChatUITests/Pods-BROChat-BROChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F1D2EB0BE61AFB41DD44C4A /* Pods-BROChat-BROChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChat-BROChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-BROChat-BROChatUITests/Pods-BROChat-BROChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D08374B2893E4280091E803 /* BROChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BROChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D08374E2893E4280091E803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0837502893E4280091E803 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		7D08376B2893E42F0091E803 /* BROChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BROChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D08376F2893E42F0091E803 /* BROChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITests.swift; sourceTree = "<group>"; };
 		7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D479E55289951340097A0CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BROChat/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7D54491E28991DAB00291A35 /* BROChat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BROChat.xcworkspace; sourceTree = "<group>"; };
+		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97325812A51299A828D9C26 /* Pods-BROChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChatTests.debug.xcconfig"; path = "Target Support Files/Pods-BROChatTests/Pods-BROChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE66634EA3B63A169B0228A /* Pods-BROChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChat.debug.xcconfig"; path = "Target Support Files/Pods-BROChat/Pods-BROChat.debug.xcconfig"; sourceTree = "<group>"; };
+		E39116CB324E5B930BED329B /* Pods-BROChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChat.release.xcconfig"; path = "Target Support Files/Pods-BROChat/Pods-BROChat.release.xcconfig"; sourceTree = "<group>"; };
+		F3940014C3F5B5FD1A3449D1 /* Pods_BROChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5041689699063B31491123F /* Pods-BROChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChatTests.release.xcconfig"; path = "Target Support Files/Pods-BROChatTests/Pods-BROChatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495FCA1555DE19A4F91E8B57 /* Pods_BROChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5E17179B4EDFA767A8B71F /* Pods_BROChat_BROChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26821B0FD2D213F230FF1E4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D54491E28991DAB00291A35 /* BROChat.xcworkspace */,
+				F3940014C3F5B5FD1A3449D1 /* Pods_BROChat.framework */,
+				9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */,
+				0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		736E72C4F092BC958139DEC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEE66634EA3B63A169B0228A /* Pods-BROChat.debug.xcconfig */,
+				E39116CB324E5B930BED329B /* Pods-BROChat.release.xcconfig */,
+				5F1D2EB0BE61AFB41DD44C4A /* Pods-BROChat-BROChatUITests.debug.xcconfig */,
+				19C964E5B36473DD60FC59C2 /* Pods-BROChat-BROChatUITests.release.xcconfig */,
+				D97325812A51299A828D9C26 /* Pods-BROChatTests.debug.xcconfig */,
+				F5041689699063B31491123F /* Pods-BROChatTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7D0837422893E4280091E803 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				7D0837642893E42F0091E803 /* BROChatTests */,
 				7D08376E2893E42F0091E803 /* BROChatUITests */,
 				7D08374C2893E4280091E803 /* Products */,
+				736E72C4F092BC958139DEC9 /* Pods */,
+				26821B0FD2D213F230FF1E4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +151,7 @@
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
 				7D08375C2893E42E0091E803 /* Info.plist */,
+				7D479E55289951340097A0CF /* GoogleService-Info.plist */,
 			);
 			path = BROChat;
 			sourceTree = "<group>";
@@ -134,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0837752893E42F0091E803 /* Build configuration list for PBXNativeTarget "BROChat" */;
 			buildPhases = (
+				4D61FAC8E2F8F69FCF0D63AB /* [CP] Check Pods Manifest.lock */,
 				7D0837472893E4280091E803 /* Sources */,
 				7D0837482893E4280091E803 /* Frameworks */,
 				7D0837492893E4280091E803 /* Resources */,
+				A15ABDD2B371B4DA309EF49C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0837782893E42F0091E803 /* Build configuration list for PBXNativeTarget "BROChatTests" */;
 			buildPhases = (
+				7DF3B7AD6633399483F30EAA /* [CP] Check Pods Manifest.lock */,
 				7D08375D2893E42F0091E803 /* Sources */,
 				7D08375E2893E42F0091E803 /* Frameworks */,
 				7D08375F2893E42F0091E803 /* Resources */,
@@ -169,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D08377B2893E42F0091E803 /* Build configuration list for PBXNativeTarget "BROChatUITests" */;
 			buildPhases = (
+				1D3FE46638B12EA20862163A /* [CP] Check Pods Manifest.lock */,
 				7D0837672893E42F0091E803 /* Sources */,
 				7D0837682893E42F0091E803 /* Frameworks */,
 				7D0837692893E42F0091E803 /* Resources */,
+				BEA331876C4B42963C8D42FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +292,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */,
+				7D479E56289951340097A0CF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +305,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3FE46638B12EA20862163A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BROChat-BROChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D61FAC8E2F8F69FCF0D63AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BROChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF3B7AD6633399483F30EAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BROChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15ABDD2B371B4DA309EF49C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BROChat/Pods-BROChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BROChat/Pods-BROChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BROChat/Pods-BROChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA331876C4B42963C8D42FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BROChat-BROChatUITests/Pods-BROChat-BROChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BROChat-BROChatUITests/Pods-BROChat-BROChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BROChat-BROChatUITests/Pods-BROChat-BROChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D0837472893E4280091E803 /* Sources */ = {
@@ -434,6 +590,7 @@
 		};
 		7D0837762893E42F0091E803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE66634EA3B63A169B0228A /* Pods-BROChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,12 +612,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7D0837772893E42F0091E803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39116CB324E5B930BED329B /* Pods-BROChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,12 +640,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		7D0837792893E42F0091E803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97325812A51299A828D9C26 /* Pods-BROChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +666,7 @@
 		};
 		7D08377A2893E42F0091E803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5041689699063B31491123F /* Pods-BROChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +686,7 @@
 		};
 		7D08377C2893E42F0091E803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1D2EB0BE61AFB41DD44C4A /* Pods-BROChat-BROChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +704,7 @@
 		};
 		7D08377D2893E42F0091E803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C964E5B36473DD60FC59C2 /* Pods-BROChat-BROChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

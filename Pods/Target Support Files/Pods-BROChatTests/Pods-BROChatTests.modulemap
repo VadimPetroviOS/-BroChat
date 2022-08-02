@@ -1,0 +1,6 @@
+framework module Pods_BROChatTests {
+  umbrella header "Pods-BROChatTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
