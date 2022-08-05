@@ -41,6 +41,7 @@ final class ViewController: UIViewController {
         button.setTitle("", for: .highlighted)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
+        button.addTarget(self, action: #selector(registrationBroButton), for: .touchUpInside)
         
         return button
     }()
@@ -85,6 +86,11 @@ final class ViewController: UIViewController {
         
         
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    @objc func registrationBroButton() {
+        let vc = RegistrationViewController()
+        self.navigationController?.present(vc, animated: true)
     }
 }
 
