@@ -1,20 +1,15 @@
 //
-//  RegistrationViewController.swift
+//  RegistrationView.swift
 //  BROChat
 //
-//  Created by Вадим on 04.08.2022.
+//  Created by Вадим on 05.08.2022.
 //
 
 import UIKit
-
-class RegistrationViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .black
-        subView()
-        addConstraints()
-    }
+/*
+class SignUpView: UIView {
+    
+    weak var delegate: SignUpViewController?
     
     private let logTextField: UITextField = {
         let textField = UITextField()
@@ -56,9 +51,5 @@ class RegistrationViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
     
-    private func subView() {
-        view.addSubview(logTextField)
-        view.addSubview(passTextField)
-    }
-
 }
+*/

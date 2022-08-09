@@ -10,7 +10,7 @@
 		495FCA1555DE19A4F91E8B57 /* Pods_BROChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3940014C3F5B5FD1A3449D1 /* Pods_BROChat.framework */; };
 		7D08374F2893E4280091E803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08374E2893E4280091E803 /* AppDelegate.swift */; };
 		7D0837512893E4280091E803 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837502893E4280091E803 /* SceneDelegate.swift */; };
-		7D0837532893E4280091E803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837522893E4280091E803 /* ViewController.swift */; };
+		7D0837532893E4280091E803 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837522893E4280091E803 /* WelcomeViewController.swift */; };
 		7D0837562893E4280091E803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0837542893E4280091E803 /* Main.storyboard */; };
 		7D0837582893E42E0091E803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0837572893E42E0091E803 /* Assets.xcassets */; };
 		7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0837592893E42E0091E803 /* LaunchScreen.storyboard */; };
@@ -18,8 +18,10 @@
 		7D0837702893E42F0091E803 /* BROChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08376F2893E42F0091E803 /* BROChatUITests.swift */; };
 		7D0837722893E42F0091E803 /* BROChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */; };
 		7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7D54491E28991DAB00291A35 /* BROChat.xcworkspace */; };
+		7D9A29FC289D2DF7001BDF64 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */; };
+		7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FE28A11683001BDF64 /* WelcomeView.swift */; };
 		7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */; };
-		7DE08F32289BAD7D00F03F94 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* RegistrationViewController.swift */; };
+		7DE08F32289BAD7D00F03F94 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* SignUpViewController.swift */; };
 		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
 		AD5E17179B4EDFA767A8B71F /* Pods_BROChat_BROChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +50,7 @@
 		7D08374B2893E4280091E803 /* BROChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BROChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D08374E2893E4280091E803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0837502893E4280091E803 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D0837522893E4280091E803 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D0837522893E4280091E803 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		7D0837552893E4280091E803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D0837572893E42E0091E803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D08375A2893E42E0091E803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +61,10 @@
 		7D08376F2893E42F0091E803 /* BROChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITests.swift; sourceTree = "<group>"; };
 		7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7D54491E28991DAB00291A35 /* BROChat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BROChat.xcworkspace; sourceTree = "<group>"; };
+		7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7D9A29FE28A11683001BDF64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7DE08F31289BAD7D00F03F94 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		7DE08F31289BAD7D00F03F94 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97325812A51299A828D9C26 /* Pods-BROChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChatTests.debug.xcconfig"; path = "Target Support Files/Pods-BROChatTests/Pods-BROChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEE66634EA3B63A169B0228A /* Pods-BROChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BROChat.debug.xcconfig"; path = "Target Support Files/Pods-BROChat/Pods-BROChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,8 +153,8 @@
 				7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */,
 				7D08374E2893E4280091E803 /* AppDelegate.swift */,
 				7D0837502893E4280091E803 /* SceneDelegate.swift */,
-				7D0837522893E4280091E803 /* ViewController.swift */,
-				7DE08F31289BAD7D00F03F94 /* RegistrationViewController.swift */,
+				7D9A29FD28A1161A001BDF64 /* WelcomeView */,
+				7D9A29FA289D2DB0001BDF64 /* SignUp */,
 				7D0837542893E4280091E803 /* Main.storyboard */,
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
@@ -174,6 +178,24 @@
 				7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */,
 			);
 			path = BROChatUITests;
+			sourceTree = "<group>";
+		};
+		7D9A29FA289D2DB0001BDF64 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7DE08F31289BAD7D00F03F94 /* SignUpViewController.swift */,
+				7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7D9A29FD28A1161A001BDF64 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7D0837522893E4280091E803 /* WelcomeViewController.swift */,
+				7D9A29FE28A11683001BDF64 /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,10 +439,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0837532893E4280091E803 /* ViewController.swift in Sources */,
+				7D0837532893E4280091E803 /* WelcomeViewController.swift in Sources */,
+				7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */,
 				7D08374F2893E4280091E803 /* AppDelegate.swift in Sources */,
-				7DE08F32289BAD7D00F03F94 /* RegistrationViewController.swift in Sources */,
+				7DE08F32289BAD7D00F03F94 /* SignUpViewController.swift in Sources */,
 				7D0837512893E4280091E803 /* SceneDelegate.swift in Sources */,
+				7D9A29FC289D2DF7001BDF64 /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
