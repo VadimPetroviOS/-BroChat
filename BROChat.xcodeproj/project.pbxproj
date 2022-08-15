@@ -20,6 +20,7 @@
 		7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7D54491E28991DAB00291A35 /* BROChat.xcworkspace */; };
 		7D9A29FC289D2DF7001BDF64 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */; };
 		7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FE28A11683001BDF64 /* WelcomeView.swift */; };
+		7DA1F9F728AACECD00751497 /* ChatView in Resources */ = {isa = PBXBuildFile; fileRef = 7DA1F9F628AACECD00751497 /* ChatView */; };
 		7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */; };
 		7DE08F32289BAD7D00F03F94 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* SignUpViewController.swift */; };
 		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
@@ -63,6 +64,7 @@
 		7D54491E28991DAB00291A35 /* BROChat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BROChat.xcworkspace; sourceTree = "<group>"; };
 		7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		7D9A29FE28A11683001BDF64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7DA1F9F628AACECD00751497 /* ChatView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ChatView; path = BROChat/ChatView; sourceTree = SOURCE_ROOT; };
 		7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DE08F31289BAD7D00F03F94 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,7 @@
 				7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */,
 				7D08374E2893E4280091E803 /* AppDelegate.swift */,
 				7D0837502893E4280091E803 /* SceneDelegate.swift */,
+				7DA1F9F628AACECD00751497 /* ChatView */,
 				7D9A29FD28A1161A001BDF64 /* WelcomeView */,
 				7D9A29FA289D2DB0001BDF64 /* SignUp */,
 				7D0837542893E4280091E803 /* Main.storyboard */,
@@ -309,6 +312,7 @@
 			files = (
 				7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */,
 				7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */,
+				7DA1F9F728AACECD00751497 /* ChatView in Resources */,
 				7D0837582893E42E0091E803 /* Assets.xcassets in Resources */,
 				7D0837562893E4280091E803 /* Main.storyboard in Resources */,
 			);
