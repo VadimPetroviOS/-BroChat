@@ -17,6 +17,9 @@
 		7D0837662893E42F0091E803 /* BROChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837652893E42F0091E803 /* BROChatTests.swift */; };
 		7D0837702893E42F0091E803 /* BROChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08376F2893E42F0091E803 /* BROChatUITests.swift */; };
 		7D0837722893E42F0091E803 /* BROChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */; };
+		7D4909BF28AEC7E100890131 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909BE28AEC7E100890131 /* MessagesView.swift */; };
+		7D4909C128AEC7F700890131 /* MessageCreatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */; };
+		7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909C228AEC8BE00890131 /* MessageCell.swift */; };
 		7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7D54491E28991DAB00291A35 /* BROChat.xcworkspace */; };
 		7D9A29FC289D2DF7001BDF64 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */; };
 		7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FE28A11683001BDF64 /* WelcomeView.swift */; };
@@ -66,6 +69,9 @@
 		7D08376B2893E42F0091E803 /* BROChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BROChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D08376F2893E42F0091E803 /* BROChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITests.swift; sourceTree = "<group>"; };
 		7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D4909BE28AEC7E100890131 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCreatorDelegate.swift; sourceTree = "<group>"; };
+		7D4909C228AEC8BE00890131 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7D54491E28991DAB00291A35 /* BROChat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BROChat.xcworkspace; sourceTree = "<group>"; };
 		7D9A29FB289D2DF7001BDF64 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		7D9A29FE28A11683001BDF64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				7D08374E2893E4280091E803 /* AppDelegate.swift */,
 				7D0837502893E4280091E803 /* SceneDelegate.swift */,
 				7DA1FA0128AC220800751497 /* MessagesViewController.swift */,
+				7D4909BE28AEC7E100890131 /* MessagesView.swift */,
+				7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */,
+				7D4909C228AEC8BE00890131 /* MessageCell.swift */,
 				7DA1FA0328AC221D00751497 /* InboxCell.swift */,
 				7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */,
 				7DA1F9FC28AAD04500751497 /* Contacts */,
@@ -466,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4909C128AEC7F700890131 /* MessageCreatorDelegate.swift in Sources */,
 				7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */,
 				7DA1F9FB28AAD03800751497 /* ContactsTableViewCell.swift in Sources */,
 				7D0837532893E4280091E803 /* WelcomeViewController.swift in Sources */,
@@ -474,9 +484,11 @@
 				7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */,
 				7DE08F32289BAD7D00F03F94 /* SignUpViewController.swift in Sources */,
 				7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */,
+				7D4909BF28AEC7E100890131 /* MessagesView.swift in Sources */,
 				7D0837512893E4280091E803 /* SceneDelegate.swift in Sources */,
 				7D9A29FC289D2DF7001BDF64 /* SignUpView.swift in Sources */,
 				7DA1F9F928AAD02000751497 /* ContactsTableViewController.swift in Sources */,
+				7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
