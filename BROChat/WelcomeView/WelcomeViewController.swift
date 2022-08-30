@@ -26,20 +26,13 @@ final class WelcomeViewController: UIViewController {
 
 extension WelcomeViewController: WelcomeViewControllerDelegate {
     func signUp() {
-        
+        let signUpVC = SignUpViewController()
+        navigationController?.present(signUpVC, animated: true)
     }
     
     func logIn() {
-        
-    }
-    
-    func getStartedAction() {
-        //let signUpVC = SignUpViewController()
-        //navigationController?.present(signUpVC, animated: true)
-    }
-    
-    func logInAction() {
         //let logInVC = LogInViewController()
         //navigationController?.present(logInVC, animated: true)
     }
+    
 }

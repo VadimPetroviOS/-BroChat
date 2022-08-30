@@ -96,7 +96,7 @@ class WelcomeView: UIView {
             stackView.bottomAnchor.constraint(equalTo: stack.bottomAnchor),
             stackView.leadingAnchor.constraint(equalTo: stack.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: stack.trailingAnchor),
-            stackView.heightAnchor.constraint(equalToConstant: 50),
+            stackView.heightAnchor.constraint(equalToConstant: 60),
             
         ])
     }
