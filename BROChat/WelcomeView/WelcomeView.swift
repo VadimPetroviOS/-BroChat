@@ -64,7 +64,19 @@ class WelcomeView: UIView {
     }
     
     private func setConstraints() {
-        let stack = UIStackView(arrangedSubviews: [logoImage, welcomeLabel, signUpBroButton, logInBroButton])
+        
+        let stackView: UIStackView = {
+            let stack = UIStackView(arrangedSubviews: [signUpBroButton, logInBroButton])
+            stack.axis = .vertical
+            stack.spacing = 20
+            stack.alignment = .center
+            stack.distribution = .fillEqually
+            stack.translatesAutoresizingMaskIntoConstraints = false
+        
+            return stack
+        }()
+        
+        let stack = UIStackView(arrangedSubviews: [logoImage, welcomeLabel, stackView])
         stack.axis = .vertical
         stack.spacing = 20
         stack.alignment = .center
@@ -72,15 +84,20 @@ class WelcomeView: UIView {
         self.addSubview(stack)
         
         NSLayoutConstraint.activate([
-            logoImage.widthAnchor.constraint(equalToConstant: WelcomeViewConstants.imageSize),
-            logoImage.heightAnchor.constraint(equalToConstant: WelcomeViewConstants.imageSize),
-            signUpBroButton.widthAnchor.constraint(equalTo: logoImage.widthAnchor, multiplier: 0.8),
-            signUpBroButton.heightAnchor.constraint(equalToConstant: WelcomeViewConstants.signUpButtonHeight),
-            logInBroButton.topAnchor.constraint(equalTo: signUpBroButton.bottomAnchor, constant: 20),
+            
             stack.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
             stack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: WelcomeViewConstants.insets),
             stack.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -WelcomeViewConstants.insets),
-            stack.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -WelcomeViewConstants.insets*2)
+            stack.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -WelcomeViewConstants.insets*2),
+            
+            logoImage.widthAnchor.constraint(equalToConstant: WelcomeViewConstants.imageSize),
+            logoImage.heightAnchor.constraint(equalToConstant: WelcomeViewConstants.imageSize),
+            
+            stackView.bottomAnchor.constraint(equalTo: stack.bottomAnchor),
+            stackView.leadingAnchor.constraint(equalTo: stack.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: stack.trailingAnchor),
+            stackView.heightAnchor.constraint(equalToConstant: 50),
+            
         ])
     }
     
@@ -100,7 +117,6 @@ class WelcomeView: UIView {
 }
 
 private struct WelcomeViewConstants {
-    static let signUpButtonHeight: CGFloat = 20
     static let insets: CGFloat = 20
     static let imageSize: CGFloat = 350
 }

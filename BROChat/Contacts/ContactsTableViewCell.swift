@@ -5,6 +5,8 @@
 //  Created by Вадим on 15.08.2022.
 //
 
+
+/*
 import Foundation
 
 class ContactsTableViewCell: UITableViewCell {
@@ -77,3 +79,4 @@ struct ContactCellConst {
     static let insets: CGFloat = 10
     static let avatarSize: CGFloat = 40
 }
+*/

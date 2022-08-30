@@ -5,6 +5,7 @@
 //  Created by Вадим on 15.08.2022.
 //
 
+/*
 import UIKit
 import Firebase
 import SDWebImage
@@ -65,3 +66,4 @@ class ContactsTableViewController: UITableViewController {
     }
 }
 
+*/
