@@ -6,26 +6,11 @@
 //
 
 import UIKit
-/*
-class SignUpViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .black
-        subView()
-        addConstraints()
+class LogInViewController: UIViewController {
+    
+    override func loadView() {
+        self.view = LogInView()
     }
     
-    
-    
-    
-    
-    
-    
-    private func subView() {
-        view.addSubview(logTextField)
-        view.addSubview(passTextField)
-    }
-
 }
-*/

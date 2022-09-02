@@ -22,7 +22,7 @@ class SignUpView: UIView {
     let signUpLabel: UILabel = {
         let label = UILabel()
         label.text = "Привет, Бро"
-        label.font = .boldSystemFont(ofSize: 30)
+        label.font = .boldSystemFont(ofSize: 25)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -30,9 +30,9 @@ class SignUpView: UIView {
     
     let avatarImage: UIImageView = {
         let avatar = UIImageView()
-        avatar.image = UIImage(systemName: "camera")
+        avatar.image = UIImage(named: "camera")
         avatar.backgroundColor = .gray
-        avatar.layer.cornerRadius = 50
+        avatar.layer.cornerRadius = SignUpViewConstants.avatarSize/2
         avatar.clipsToBounds = true
         avatar.translatesAutoresizingMaskIntoConstraints = false
         avatar.isUserInteractionEnabled = true
@@ -61,9 +61,11 @@ class SignUpView: UIView {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         textfield.layer.cornerRadius = 5
-        textfield.backgroundColor = UIColor(white: 0.9, alpha: 0.8)
-        textfield.textColor = .darkGray
+        textfield.backgroundColor = UIColor.black
+        textfield.textColor = .white
         textfield.translatesAutoresizingMaskIntoConstraints = false
+        textfield.layer.borderWidth = 1.5
+        textfield.layer.borderColor = UIColor.gray.cgColor
         return textfield
     }()
     
@@ -74,9 +76,11 @@ class SignUpView: UIView {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
         textField.layer.cornerRadius = 5
-        textField.backgroundColor = UIColor(white: 0.9, alpha: 0.8)
-        textField.textColor = .darkGray
+        textField.backgroundColor = UIColor.black
+        textField.textColor = .white
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.layer.borderWidth = 1.5
+        textField.layer.borderColor = UIColor.gray.cgColor
         return textField
     }()
     
@@ -84,8 +88,10 @@ class SignUpView: UIView {
         let button = UIButton(type: .system)
         //button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 20
-        button.backgroundColor = .gray
+        button.backgroundColor = .darkGray
         button.setTitle("BROOOO", for: .normal)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        button.setTitleColor(.white, for: .normal)
         /*
         button.addTarget(self,
                          action: #selector(signUpPressed),
@@ -111,17 +117,24 @@ class SignUpView: UIView {
         stack.distribution = .fillEqually
         stack.translatesAutoresizingMaskIntoConstraints = false
         
+        self.addSubview(closeButton)
         self.addSubview(signUpLabel)
         self.addSubview(avatarImage)
         self.addSubview(stack)
         
         NSLayoutConstraint.activate([
             
-            signUpLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50),
+            closeButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: SignUpViewConstants.insets),
+            closeButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -SignUpViewConstants.insets),
+            closeButton.widthAnchor.constraint(equalToConstant: SignUpViewConstants.closeButtonSize),
+            closeButton.heightAnchor.constraint(equalToConstant: SignUpViewConstants.closeButtonSize),
             
-            avatarImage.widthAnchor.constraint(equalToConstant: 100),
-            avatarImage.heightAnchor.constraint(equalToConstant: 100),
-            avatarImage.topAnchor.constraint(equalTo: signUpLabel.bottomAnchor, constant: 30),
+            signUpLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: SignUpViewConstants.insets),
+            signUpLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: SignUpViewConstants.insets),
+            
+            avatarImage.widthAnchor.constraint(equalToConstant: SignUpViewConstants.avatarSize),
+            avatarImage.heightAnchor.constraint(equalToConstant: SignUpViewConstants.avatarSize),
+            avatarImage.topAnchor.constraint(equalTo: signUpLabel.bottomAnchor, constant: SignUpViewConstants.insets),
             avatarImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             stack.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: 30),
@@ -148,4 +161,12 @@ class SignUpView: UIView {
     required init?(coder: NSCoder) {
         fatalError()
     }
+}
+
+private struct SignUpViewConstants {
+    static let textFieldsHeight: CGFloat = 50
+    static let signUpButtonHeight: CGFloat = 50
+    static let insets: CGFloat = 20
+    static let closeButtonSize: CGFloat = 30
+    static let avatarSize: CGFloat = 100
 }
