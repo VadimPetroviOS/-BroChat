@@ -10,7 +10,7 @@ import UIKit
 final class SignUpViewController: UIViewController {
 
     override func loadView() {
-        self.view = SignInView()
+        self.view = SignUpView()
     }
     
     override func viewDidLoad() {
