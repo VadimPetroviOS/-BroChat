@@ -31,8 +31,8 @@ extension WelcomeViewController: WelcomeViewControllerDelegate {
     }
     
     func logIn() {
-        //let logInVC = LogInViewController()
-        //navigationController?.present(logInVC, animated: true)
+        let logInVC = LogInViewController()
+        navigationController?.present(logInVC, animated: true)
     }
     
 }
