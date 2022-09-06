@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
+protocol SignUpViewControllerDelegate: AnyObject {
+    func presentPicker()
+}
+
 class SignUpView: UIView {
+    
+    weak var delegate: SignUpViewControllerDelegate?
     
     let closeButton: UIButton = {
         let button = UIButton()
@@ -106,6 +112,7 @@ class SignUpView: UIView {
         super.init(frame: frame)
         backgroundColor = .black
         setConstraints()
+        configAvatar()
     }
     
     private func setConstraints() {
@@ -156,6 +163,15 @@ class SignUpView: UIView {
         ])
         
         
+    }
+    
+    func configAvatar() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(avatarTapped))
+        avatarImage.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func avatarTapped(_ gesture: UITapGestureRecognizer){
+        delegate?.presentPicker()
     }
     
     required init?(coder: NSCoder) {

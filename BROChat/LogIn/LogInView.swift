@@ -72,6 +72,7 @@ class LogInView: UIView {
         super.init(frame: frame)
         backgroundColor = .black
         addConstraints()
+        
     }
     
     func addConstraints() {
@@ -79,27 +80,25 @@ class LogInView: UIView {
         self.addSubview(closeButton)
         self.addSubview(logInLabel)
         self.addSubview(stack)
-        self.addSubview(emailTF)
-        self.addSubview(passwordTF)
-        self.addSubview(logInButton)
+        
         NSLayoutConstraint.activate([
-            closeButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-            closeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            closeButton.widthAnchor.constraint(equalToConstant: 20),
-            closeButton.heightAnchor.constraint(equalToConstant: 20),
-            logInLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: 50),
-            logInLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            closeButton.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: logInViewConstants.insets),
+            closeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -logInViewConstants.insets),
+            closeButton.widthAnchor.constraint(equalToConstant: logInViewConstants.closeButtonSize),
+            closeButton.heightAnchor.constraint(equalToConstant: logInViewConstants.closeButtonSize),
+            logInLabel.topAnchor.constraint(equalTo: closeButton.bottomAnchor, constant: logInViewConstants.textFieldsHeight),
+            logInLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: logInViewConstants.insets),
             
-            stack.topAnchor.constraint(equalTo: self.logInLabel.bottomAnchor,constant: 50),
+            stack.topAnchor.constraint(equalTo: self.logInLabel.bottomAnchor,constant: logInViewConstants.insets),
             stack.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
             stack.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
-            emailTF.heightAnchor.constraint(equalToConstant: 50),
+            emailTF.heightAnchor.constraint(equalToConstant: logInViewConstants.textFieldsHeight),
             emailTF.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
             emailTF.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
-            passwordTF.heightAnchor.constraint(equalToConstant: 50),
+            passwordTF.heightAnchor.constraint(equalToConstant: logInViewConstants.textFieldsHeight),
             passwordTF.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
             passwordTF.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
-            logInButton.heightAnchor.constraint(equalToConstant: 50),
+            logInButton.heightAnchor.constraint(equalToConstant: logInViewConstants.logInButtonHeight),
             logInButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
             logInButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor)
              
@@ -108,7 +107,7 @@ class LogInView: UIView {
     }
     
     func createStackView() -> UIStackView {
-        let stack = UIStackView(arrangedSubviews: [emailTF,emailTF,logInButton])
+        let stack = UIStackView(arrangedSubviews: [emailTF,passwordTF,logInButton])
         stack.axis = .vertical
         stack.spacing = 20
         stack.alignment = .center
@@ -121,4 +120,11 @@ class LogInView: UIView {
         fatalError()
     }
     
+}
+
+private struct logInViewConstants {
+    static let textFieldsHeight: CGFloat = 50
+    static let logInButtonHeight: CGFloat = 50
+    static let insets: CGFloat = 20
+    static let closeButtonSize: CGFloat = 30
 }
