@@ -28,13 +28,13 @@
 		7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */; };
 		7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0128AC220800751497 /* MessagesViewController.swift */; };
 		7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0328AC221D00751497 /* InboxCell.swift */; };
-		7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */; };
 		7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */; };
 		7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808D28D9C74B00162939 /* FirestoreManager.swift */; };
 		7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808F28D9C75800162939 /* SignUpManager.swift */; };
 		7DEA809228D9C75C00162939 /* ChatAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */; };
 		7DEA809428D9C84700162939 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809328D9C84700162939 /* Constants.swift */; };
 		7DEA809628D9D20E00162939 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809528D9D20E00162939 /* UserManager.swift */; };
+		7DEA809828DC919500162939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA809728DC919500162939 /* GoogleService-Info.plist */; };
 		7DF6116B28BE056F00CCF2A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */; };
 		7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */; };
 		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
@@ -86,13 +86,13 @@
 		7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		7DA1FA0128AC220800751497 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		7DA1FA0328AC221D00751497 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
-		7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		7DEA808D28D9C74B00162939 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		7DEA808F28D9C75800162939 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 		7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTabBarController.swift; sourceTree = "<group>"; };
 		7DEA809328D9C84700162939 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7DEA809528D9D20E00162939 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		7DEA809728DC919500162939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,7 +180,7 @@
 		7D08374D2893E4280091E803 /* BROChat */ = {
 			isa = PBXGroup;
 			children = (
-				7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */,
+				7DEA809728DC919500162939 /* GoogleService-Info.plist */,
 				7D08374E2893E4280091E803 /* AppDelegate.swift */,
 				7D0837502893E4280091E803 /* SceneDelegate.swift */,
 				7DA1FA0128AC220800751497 /* MessagesViewController.swift */,
@@ -369,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */,
-				7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */,
+				7DEA809828DC919500162939 /* GoogleService-Info.plist in Resources */,
 				7D0837582893E42E0091E803 /* Assets.xcassets in Resources */,
 				7D0837562893E4280091E803 /* Main.storyboard in Resources */,
 			);

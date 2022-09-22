@@ -143,14 +143,12 @@ class SignUpView: UIView {
                                        constant: SignUpViewConstants.insets),
         ]
         constraintsWithErrorLabel = [
-            errorLabel.topAnchor.constraint(equalTo: avatarImage.bottomAnchor,
+            errorLabel.topAnchor.constraint(equalTo: stack.bottomAnchor,
                                             constant: SignUpViewConstants.insets),
             errorLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor,
                                                 constant: SignUpViewConstants.insets),
             errorLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor,
                                                 constant: -SignUpViewConstants.insets),
-            stack.topAnchor.constraint(equalTo: errorLabel.bottomAnchor,
-                                       constant: 5)
         ]
         
         NSLayoutConstraint.activate([
@@ -215,12 +213,15 @@ class SignUpView: UIView {
     
     @objc private func signUpPressed() {
         guard let userName = nicknameTF.text, nicknameTF.hasText else {
+            addErrorLabels(for: nicknameTF)
             return
         }
         guard let email = emailTF.text, emailTF.hasText else {
+            addErrorLabels(for: emailTF)
             return
         }
         guard let password = passwordTF.text, passwordTF.hasText else {
+            addErrorLabels(for: passwordTF)
             return
         }
         delegate?.signUpAction(userName: userName, email: email, password: password)
