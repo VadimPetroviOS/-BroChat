@@ -189,6 +189,21 @@ class SignUpView: UIView {
         
     }
     
+    func addErrorLabels(for textField: UITextField, error: String? = nil){
+        switch textField {
+        case nicknameTF: errorLabel.text = SignUpErrors.emptyNicknameField.rawValue
+            nicknameTF.becomeFirstResponder()
+        case emailTF: errorLabel.text = SignUpErrors.emptyEmailField.rawValue
+            emailTF.becomeFirstResponder()
+        case passwordTF: errorLabel.text = SignUpErrors.emptyPasswordField.rawValue
+            passwordTF.becomeFirstResponder()
+        default: errorLabel.text = error
+        }
+        self.addSubview(errorLabel)
+        constraintsWithoutErrorLabel.forEach {$0.isActive = false}
+        constraintsWithErrorLabel.forEach {$0.isActive = true}
+    }
+    
     func configAvatar() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(avatarTapped))
         avatarImage.addGestureRecognizer(tapGesture)
@@ -222,4 +237,10 @@ private struct SignUpViewConstants {
     static let insets: CGFloat = 20
     static let closeButtonSize: CGFloat = 30
     static let avatarSize: CGFloat = 100
+}
+
+enum SignUpErrors: String {
+    case emptyEmailField = "Please enter email"
+    case emptyPasswordField = "Please enter password"
+    case emptyNicknameField = "Please enter username"
 }

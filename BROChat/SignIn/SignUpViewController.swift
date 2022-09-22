@@ -16,6 +16,7 @@ final class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view().delegate = self
+        view().nicknameTF.becomeFirstResponder()
        
     }
     
@@ -33,7 +34,7 @@ extension SignUpViewController: SignUpViewControllerDelegate {
         FirestoreManager.shared.signUpManager.registerUser(email, password, userName,
                                                            image: view().avatarImage.image) { error in
             if let error = error {
-                //self.view().addErrorLabels(for: UITextField(), error: error.localizedDescription)
+                self.view().addErrorLabels(for: UITextField(), error: error.localizedDescription)
             } else {
                 FirestoreManager.shared.userManager.isOnline(status: true)
             }
