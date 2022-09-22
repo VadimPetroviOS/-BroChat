@@ -29,7 +29,16 @@ final class SignUpViewController: UIViewController {
 }
 
 extension SignUpViewController: SignUpViewControllerDelegate {
-    
+    func signUpAction(userName: String, email: String, password: String) {
+        FirestoreManager.shared.signUpManager.registerUser(email, password, userName,
+                                                           image: view().avatarImage.image) { error in
+            if let error = error {
+                //self.view().addErrorLabels(for: UITextField(), error: error.localizedDescription)
+            } else {
+                FirestoreManager.shared.userManager.isOnline(status: true)
+            }
+        }
+    }
     func presentPicker() {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary

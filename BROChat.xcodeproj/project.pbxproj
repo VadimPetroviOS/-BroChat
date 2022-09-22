@@ -23,7 +23,6 @@
 		7D54491F28991DAB00291A35 /* BROChat.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 7D54491E28991DAB00291A35 /* BROChat.xcworkspace */; };
 		7D9A29FC289D2DF7001BDF64 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FB289D2DF7001BDF64 /* LogInView.swift */; };
 		7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A29FE28A11683001BDF64 /* WelcomeView.swift */; };
-		7DA1F9F728AACECD00751497 /* ChatView in Resources */ = {isa = PBXBuildFile; fileRef = 7DA1F9F628AACECD00751497 /* ChatView */; };
 		7DA1F9F928AAD02000751497 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1F9F828AAD02000751497 /* ContactsTableViewController.swift */; };
 		7DA1F9FB28AAD03800751497 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1F9FA28AAD03800751497 /* ContactsTableViewCell.swift */; };
 		7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */; };
@@ -31,6 +30,11 @@
 		7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0328AC221D00751497 /* InboxCell.swift */; };
 		7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */; };
 		7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */; };
+		7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808D28D9C74B00162939 /* FirestoreManager.swift */; };
+		7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808F28D9C75800162939 /* SignUpManager.swift */; };
+		7DEA809228D9C75C00162939 /* ChatAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */; };
+		7DEA809428D9C84700162939 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809328D9C84700162939 /* Constants.swift */; };
+		7DEA809628D9D20E00162939 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809528D9D20E00162939 /* UserManager.swift */; };
 		7DF6116B28BE056F00CCF2A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */; };
 		7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */; };
 		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
@@ -77,7 +81,6 @@
 		7D54491E28991DAB00291A35 /* BROChat.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BROChat.xcworkspace; sourceTree = "<group>"; };
 		7D9A29FB289D2DF7001BDF64 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		7D9A29FE28A11683001BDF64 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		7DA1F9F628AACECD00751497 /* ChatView */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ChatView; path = BROChat/ChatView; sourceTree = SOURCE_ROOT; };
 		7DA1F9F828AAD02000751497 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		7DA1F9FA28AAD03800751497 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 		7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +88,11 @@
 		7DA1FA0328AC221D00751497 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
 		7DAA78FD289BB6E600710602 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		7DEA808D28D9C74B00162939 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		7DEA808F28D9C75800162939 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
+		7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTabBarController.swift; sourceTree = "<group>"; };
+		7DEA809328D9C84700162939 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7DEA809528D9D20E00162939 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,10 +190,14 @@
 				7DA1FA0328AC221D00751497 /* InboxCell.swift */,
 				7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */,
 				7DA1F9FC28AAD04500751497 /* Contacts */,
-				7DA1F9F628AACECD00751497 /* ChatView */,
 				7D9A29FD28A1161A001BDF64 /* WelcomeView */,
 				7DF6116C28BE058200CCF2A1 /* SignIn */,
 				7D9A29FA289D2DB0001BDF64 /* LogIn */,
+				7DEA808D28D9C74B00162939 /* FirestoreManager.swift */,
+				7DEA808F28D9C75800162939 /* SignUpManager.swift */,
+				7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */,
+				7DEA809528D9D20E00162939 /* UserManager.swift */,
+				7DEA809328D9C84700162939 /* Constants.swift */,
 				7D0837542893E4280091E803 /* Main.storyboard */,
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
@@ -358,7 +370,6 @@
 			files = (
 				7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */,
 				7DAA78FE289BB6E600710602 /* GoogleService-Info.plist in Resources */,
-				7DA1F9F728AACECD00751497 /* ChatView in Resources */,
 				7D0837582893E42E0091E803 /* Assets.xcassets in Resources */,
 				7D0837562893E4280091E803 /* Main.storyboard in Resources */,
 			);
@@ -489,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEA809228D9C75C00162939 /* ChatAppTabBarController.swift in Sources */,
 				7D4909C128AEC7F700890131 /* MessageCreatorDelegate.swift in Sources */,
 				7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */,
 				7DA1F9FB28AAD03800751497 /* ContactsTableViewCell.swift in Sources */,
@@ -497,13 +509,17 @@
 				7D08374F2893E4280091E803 /* AppDelegate.swift in Sources */,
 				7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */,
 				7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */,
+				7DEA809628D9D20E00162939 /* UserManager.swift in Sources */,
 				7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */,
 				7DF6116B28BE056F00CCF2A1 /* SignUpViewController.swift in Sources */,
 				7D4909BF28AEC7E100890131 /* MessagesView.swift in Sources */,
 				7D0837512893E4280091E803 /* SceneDelegate.swift in Sources */,
 				7D9A29FC289D2DF7001BDF64 /* LogInView.swift in Sources */,
 				7DA1F9F928AAD02000751497 /* ContactsTableViewController.swift in Sources */,
+				7DEA809428D9C84700162939 /* Constants.swift in Sources */,
 				7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */,
+				7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */,
+				7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */,
 				7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

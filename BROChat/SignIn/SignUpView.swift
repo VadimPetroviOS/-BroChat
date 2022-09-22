@@ -10,6 +10,7 @@ import UIKit
 
 protocol SignUpViewControllerDelegate: AnyObject {
     func presentPicker()
+    func signUpAction(userName: String, email: String, password: String)
 }
 
 class SignUpView: UIView {
@@ -98,11 +99,9 @@ class SignUpView: UIView {
         button.setTitle("BROOOO", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 20)
         button.setTitleColor(.white, for: .normal)
-        /*
         button.addTarget(self,
                          action: #selector(signUpPressed),
                          for: .touchUpInside)
-        */
         return button
     }()
     
@@ -170,8 +169,21 @@ class SignUpView: UIView {
         avatarImage.addGestureRecognizer(tapGesture)
     }
     
-    @objc private func avatarTapped(_ gesture: UITapGestureRecognizer){
+    @objc private func avatarTapped(_ gesture: UITapGestureRecognizer) {
         delegate?.presentPicker()
+    }
+    
+    @objc private func signUpPressed() {
+        guard let userName = nicknameTF.text, nicknameTF.hasText else {
+            return
+        }
+        guard let email = emailTF.text, emailTF.hasText else {
+            return
+        }
+        guard let password = passwordTF.text, passwordTF.hasText else {
+            return
+        }
+        delegate?.signUpAction(userName: userName, email: email, password: password)
     }
     
     required init?(coder: NSCoder) {

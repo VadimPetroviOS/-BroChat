@@ -6,9 +6,10 @@ target 'BROChat' do
   use_frameworks!
 
   # Pods for BROChat
-
-pod 'FirebaseAuth'
-pod 'FirebaseFirestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage'
 
   target 'BROChatTests' do
     inherit! :search_paths

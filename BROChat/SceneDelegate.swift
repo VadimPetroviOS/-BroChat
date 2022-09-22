@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -28,6 +29,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = myWindow
         
         myWindow.makeKeyAndVisible()
+    }
+    
+    func configureInitialVC(){
+        var initialVC: UIViewController
+        if let _ = Auth.auth().currentUser {
+            initialVC = ChatAppTabBarController()
+        } else {
+            initialVC = UINavigationController(rootViewController: WelcomeViewController())
+        }
+        window?.rootViewController = initialVC
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
