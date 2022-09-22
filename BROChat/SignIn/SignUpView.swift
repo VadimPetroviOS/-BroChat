@@ -17,6 +17,9 @@ class SignUpView: UIView {
     
     weak var delegate: SignUpViewControllerDelegate?
     
+    var constraintsWithErrorLabel = [NSLayoutConstraint]()
+    var constraintsWithoutErrorLabel = [NSLayoutConstraint]()
+    
     let closeButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
@@ -105,7 +108,14 @@ class SignUpView: UIView {
         return button
     }()
     
-    
+    let errorLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .systemRed
+        label.font = .systemFont(ofSize: 17, weight: .thin)
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -127,6 +137,21 @@ class SignUpView: UIView {
         self.addSubview(signUpLabel)
         self.addSubview(avatarImage)
         self.addSubview(stack)
+        
+        constraintsWithoutErrorLabel = [
+            stack.topAnchor.constraint(equalTo: avatarImage.bottomAnchor,
+                                       constant: SignUpViewConstants.insets),
+        ]
+        constraintsWithErrorLabel = [
+            errorLabel.topAnchor.constraint(equalTo: avatarImage.bottomAnchor,
+                                            constant: SignUpViewConstants.insets),
+            errorLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor,
+                                                constant: SignUpViewConstants.insets),
+            errorLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor,
+                                                constant: -SignUpViewConstants.insets),
+            stack.topAnchor.constraint(equalTo: errorLabel.bottomAnchor,
+                                       constant: 5)
+        ]
         
         NSLayoutConstraint.activate([
             
@@ -159,7 +184,7 @@ class SignUpView: UIView {
             signUpButton.heightAnchor.constraint(equalToConstant: 50),
             signUpButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor),
             signUpButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor)
-        ])
+        ] + constraintsWithoutErrorLabel)
         
         
     }
