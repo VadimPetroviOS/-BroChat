@@ -7,23 +7,35 @@
 
 import UIKit
 
-class ChatAppTabBarController: UIViewController {
+class ChatAppTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewControllers = [
+            createNavControler(viewControler: ContactsTableViewController(),
+                               title: "Contacts",
+                               image: Constants.Images.contactsImage,
+                               backgroundColor: .white),
+            createNavControler(viewControler: InboxTableViewController(),
+                               title: "Chats",
+                               image: Constants.Images.messagesImage,
+                               backgroundColor: .white),
+            createNavControler(viewControler: SettingsTableViewController(/*style: .grouped*/),
+                               title: "Settings",
+                               image: Constants.Images.settingsImage,
+                               backgroundColor: Constants.Colors.grayBackground)
+        ]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    fileprivate func createNavControler(viewControler: UIViewController,
+                                        title: String,
+                                        image: String, backgroundColor: UIColor) -> UIViewController {
+        let navController = UINavigationController(rootViewController: viewControler)
+        navController.navigationBar.prefersLargeTitles = true
+        viewControler.view.backgroundColor = backgroundColor
+        viewControler.navigationItem.title = title
+        navController.tabBarItem.title = title
+        navController.tabBarItem.image = UIImage(systemName: image)
+        return navController
     }
-    */
-
 }

@@ -1,16 +1,14 @@
 //
-//  MessagesViewController.swift
+//  SettingsTableViewController.swift
 //  BROChat
 //
-//  Created by Вадим on 16.08.2022.
+//  Created by Вадим on 28.09.2022.
 //
 
 import UIKit
 
-class MessagesViewController: UIViewController {
+class SettingsTableViewController: UIViewController {
 
-    var partnerUser: User?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,3 +27,4 @@ class MessagesViewController: UIViewController {
     */
 
 }
+

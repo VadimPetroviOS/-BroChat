@@ -18,6 +18,9 @@
 		7D0837702893E42F0091E803 /* BROChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D08376F2893E42F0091E803 /* BROChatUITests.swift */; };
 		7D0837722893E42F0091E803 /* BROChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */; };
 		7D3A2BA728E463540006BB28 /* LogActionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A2BA628E463540006BB28 /* LogActionsManager.swift */; };
+		7D3A2BA928E479140006BB28 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A2BA828E479140006BB28 /* SettingsTableViewController.swift */; };
+		7D3A2BAB28E47A590006BB28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A2BAA28E47A590006BB28 /* User.swift */; };
+		7D3A2BAD28E47B0F0006BB28 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A2BAC28E47B0E0006BB28 /* Extensions.swift */; };
 		7D4909BF28AEC7E100890131 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909BE28AEC7E100890131 /* MessagesView.swift */; };
 		7D4909C128AEC7F700890131 /* MessageCreatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */; };
 		7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4909C228AEC8BE00890131 /* MessageCell.swift */; };
@@ -77,6 +80,9 @@
 		7D08376F2893E42F0091E803 /* BROChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITests.swift; sourceTree = "<group>"; };
 		7D0837712893E42F0091E803 /* BROChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BROChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7D3A2BA628E463540006BB28 /* LogActionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogActionsManager.swift; sourceTree = "<group>"; };
+		7D3A2BA828E479140006BB28 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		7D3A2BAA28E47A590006BB28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7D3A2BAC28E47B0E0006BB28 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7D4909BE28AEC7E100890131 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCreatorDelegate.swift; sourceTree = "<group>"; };
 		7D4909C228AEC8BE00890131 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -191,16 +197,19 @@
 				7D4909C228AEC8BE00890131 /* MessageCell.swift */,
 				7DA1FA0328AC221D00751497 /* InboxCell.swift */,
 				7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */,
+				7D3A2BA828E479140006BB28 /* SettingsTableViewController.swift */,
 				7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */,
 				7DA1F9FC28AAD04500751497 /* Contacts */,
 				7D9A29FD28A1161A001BDF64 /* WelcomeView */,
 				7DF6116C28BE058200CCF2A1 /* SignIn */,
 				7D9A29FA289D2DB0001BDF64 /* LogIn */,
+				7D3A2BAA28E47A590006BB28 /* User.swift */,
 				7DEA808D28D9C74B00162939 /* FirestoreManager.swift */,
 				7DEA808F28D9C75800162939 /* SignUpManager.swift */,
 				7D3A2BA628E463540006BB28 /* LogActionsManager.swift */,
 				7DEA809528D9D20E00162939 /* UserManager.swift */,
 				7DEA809328D9C84700162939 /* Constants.swift */,
+				7D3A2BAC28E47B0E0006BB28 /* Extensions.swift */,
 				7D0837542893E4280091E803 /* Main.storyboard */,
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
@@ -523,7 +532,10 @@
 				7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */,
 				7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */,
 				7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */,
+				7D3A2BAD28E47B0F0006BB28 /* Extensions.swift in Sources */,
+				7D3A2BAB28E47A590006BB28 /* User.swift in Sources */,
 				7D3A2BA728E463540006BB28 /* LogActionsManager.swift in Sources */,
+				7D3A2BA928E479140006BB28 /* SettingsTableViewController.swift in Sources */,
 				7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

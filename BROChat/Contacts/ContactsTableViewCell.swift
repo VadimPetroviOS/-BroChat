@@ -6,8 +6,8 @@
 //
 
 
-/*
-import Foundation
+
+import UIKit
 
 class ContactsTableViewCell: UITableViewCell {
     
@@ -79,4 +79,3 @@ struct ContactCellConst {
     static let insets: CGFloat = 10
     static let avatarSize: CGFloat = 40
 }
-*/

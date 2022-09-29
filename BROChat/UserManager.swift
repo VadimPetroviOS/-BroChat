@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 class UserManager {
-    /*
+    
     func fetchUsers(onSuccess: @escaping ((User) -> Void)) {
         let docRef = Constants.FirestoreConst.db.collection(Constants.FirestoreConst.usersCollectionName)
         docRef.getDocuments { snapshot, error in
@@ -35,7 +35,7 @@ class UserManager {
         let user = User(uid: uid, userName: userName, email: email, profileImageUrl: profileImageUrl)
         return user
     }
-    */
+    
     func isOnline(status: Bool) {
         guard let currentUserUid = Constants.FirestoreConst.auth.currentUser?.uid else { return }
         
@@ -48,7 +48,7 @@ class UserManager {
         let activeStatusRef = usersRef.document(currentUserUid).collection(Constants.FirestoreConst.isOnlinCollectionName)
         activeStatusRef.document("isOnline").setData(dict)
     }
-    /*
+    
     func observeActivity(userUid: String, onSuccess: @escaping ((Bool, Double)-> Void),
                          listener: ((ListenerRegistration) -> Void)?) {
         let usersRef = Constants.FirestoreConst.db.collection(Constants.FirestoreConst.usersCollectionName)
@@ -68,5 +68,5 @@ class UserManager {
         }
         listener?(snapshotListener)
     }
-     */
+     
 }
