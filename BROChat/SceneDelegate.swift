@@ -19,16 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let ws = (scene as? UIWindowScene) else { return }
         
-        let myWindow = UIWindow(windowScene: ws)
-        let navContr = UINavigationController()
-        let vc = WelcomeViewController()
+        window = UIWindow()
+        window?.windowScene = ws
+        window?.makeKeyAndVisible()
+        configureInitialVC()
         
-        navContr.viewControllers = [vc]
-        myWindow.rootViewController = navContr
-        
-        self.window = myWindow
-        
-        myWindow.makeKeyAndVisible()
     }
     
     func configureInitialVC(){
@@ -52,7 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
-        FirestoreManager.shared.userManager.isOnline(status: false)
+        FirestoreManager.shared.userManager.isOnline(status: true)
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -69,6 +64,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        FirestoreManager.shared.userManager.isOnline(status: false)
     }
 
 

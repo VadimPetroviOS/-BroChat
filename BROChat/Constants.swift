@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import FirebaseAuth
 import Firebase
+import FirebaseDatabase
 
 struct Constants {
     struct Images {

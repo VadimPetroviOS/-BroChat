@@ -16,7 +16,7 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view().delegate = self
-        //view().emailTF.becomeFirstResponder()
+        view().emailTF.becomeFirstResponder()
     }
     
     private func view() -> LogInView {

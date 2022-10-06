@@ -30,6 +30,7 @@ final class SignUpViewController: UIViewController {
 }
 
 extension SignUpViewController: SignUpViewControllerDelegate {
+    
     func signUpAction(userName: String, email: String, password: String) {
         FirestoreManager.shared.signUpManager.registerUser(email, password, userName,
                                                            image: view().avatarImage.image) { error in
@@ -46,6 +47,10 @@ extension SignUpViewController: SignUpViewControllerDelegate {
         picker.allowsEditing = true
         picker.delegate = self
         self.present(picker, animated: true)
+    }
+    
+    func closeAction() {
+        self.dismiss(animated: true)
     }
 }
 

@@ -19,7 +19,7 @@ class LogInView: UIView {
     var constraintsWithErrorLabel = [NSLayoutConstraint]()
     var constraintsWithoutErrorLabel = [NSLayoutConstraint]()
     
-    private let closeButton: UIButton = {
+    let closeButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
         button.contentMode = .scaleToFill
@@ -28,7 +28,7 @@ class LogInView: UIView {
         return button
     }()
     
-    private let logInLabel: UILabel = {
+    let logInLabel: UILabel = {
         let label = UILabel()
         label.text = "Ждем тебя, BRO!"
         label.textColor = .white
@@ -37,7 +37,7 @@ class LogInView: UIView {
         return label
     }()
     
-    private let emailTF: UITextField = {
+    let emailTF: UITextField = {
         let textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(
             string: " Bromail",
@@ -52,7 +52,7 @@ class LogInView: UIView {
         return textField
     }()
     
-    private let passwordTF: UITextField = {
+    let passwordTF: UITextField = {
         let textField = UITextField()
         textField.attributedPlaceholder = NSAttributedString(
             string: " Brossword",
@@ -67,7 +67,7 @@ class LogInView: UIView {
         return textField
     }()
     
-    private let logInButton: UIButton = {
+    let logInButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 20

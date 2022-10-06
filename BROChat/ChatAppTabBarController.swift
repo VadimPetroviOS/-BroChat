@@ -20,7 +20,7 @@ class ChatAppTabBarController: UITabBarController {
                                title: "Chats",
                                image: Constants.Images.messagesImage,
                                backgroundColor: .white),
-            createNavControler(viewControler: SettingsTableViewController(/*style: .grouped*/),
+            createNavControler(viewControler: SettingsTableViewController(style: .grouped),
                                title: "Settings",
                                image: Constants.Images.settingsImage,
                                backgroundColor: Constants.Colors.grayBackground)

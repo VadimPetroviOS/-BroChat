@@ -32,13 +32,19 @@
 		7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */; };
 		7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0128AC220800751497 /* MessagesViewController.swift */; };
 		7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0328AC221D00751497 /* InboxCell.swift */; };
+		7DCE8A6028EB0EF700964253 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE8A5F28EB0EF600964253 /* UserStatus.swift */; };
+		7DD9012928EED87600CFF8A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */; };
 		7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */; };
 		7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808D28D9C74B00162939 /* FirestoreManager.swift */; };
 		7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808F28D9C75800162939 /* SignUpManager.swift */; };
 		7DEA809228D9C75C00162939 /* ChatAppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */; };
 		7DEA809428D9C84700162939 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809328D9C84700162939 /* Constants.swift */; };
 		7DEA809628D9D20E00162939 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA809528D9D20E00162939 /* UserManager.swift */; };
-		7DEA809828DC919500162939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA809728DC919500162939 /* GoogleService-Info.plist */; };
+		7DF5D02828E5ABFC005549CC /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D02728E5ABFC005549CC /* Inbox.swift */; };
+		7DF5D02E28E5B221005549CC /* messageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D02D28E5B221005549CC /* messageManager.swift */; };
+		7DF5D03028E5B2F2005549CC /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D02F28E5B2F2005549CC /* AvatarView.swift */; };
+		7DF5D03228E5B367005549CC /* LogOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D03128E5B367005549CC /* LogOutCell.swift */; };
+		7DF5D03428E5B409005549CC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5D03328E5B409005549CC /* Message.swift */; };
 		7DF6116B28BE056F00CCF2A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */; };
 		7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */; };
 		95E5AE202E493E926D805987 /* Pods_BROChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2088CB9FBC642E4B98D03F /* Pods_BROChatTests.framework */; };
@@ -94,13 +100,19 @@
 		7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		7DA1FA0128AC220800751497 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		7DA1FA0328AC221D00751497 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
+		7DCE8A5F28EB0EF600964253 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
+		7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		7DEA808D28D9C74B00162939 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		7DEA808F28D9C75800162939 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 		7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTabBarController.swift; sourceTree = "<group>"; };
 		7DEA809328D9C84700162939 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7DEA809528D9D20E00162939 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		7DEA809728DC919500162939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DF5D02728E5ABFC005549CC /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
+		7DF5D02D28E5B221005549CC /* messageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageManager.swift; sourceTree = "<group>"; };
+		7DF5D02F28E5B2F2005549CC /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7DF5D03128E5B367005549CC /* LogOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutCell.swift; sourceTree = "<group>"; };
+		7DF5D03328E5B409005549CC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7DF6116A28BE056F00CCF2A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7DF6116D28BE067D00CCF2A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9ACCCB44B86758BDF5810B4B /* Pods_BROChat_BROChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BROChat_BROChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,32 +200,25 @@
 		7D08374D2893E4280091E803 /* BROChat */ = {
 			isa = PBXGroup;
 			children = (
-				7DEA809728DC919500162939 /* GoogleService-Info.plist */,
 				7D08374E2893E4280091E803 /* AppDelegate.swift */,
 				7D0837502893E4280091E803 /* SceneDelegate.swift */,
-				7DA1FA0128AC220800751497 /* MessagesViewController.swift */,
-				7D4909BE28AEC7E100890131 /* MessagesView.swift */,
-				7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */,
-				7D4909C228AEC8BE00890131 /* MessageCell.swift */,
-				7DA1FA0328AC221D00751497 /* InboxCell.swift */,
-				7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */,
-				7D3A2BA828E479140006BB28 /* SettingsTableViewController.swift */,
-				7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */,
-				7DA1F9FC28AAD04500751497 /* Contacts */,
 				7D9A29FD28A1161A001BDF64 /* WelcomeView */,
 				7DF6116C28BE058200CCF2A1 /* SignIn */,
 				7D9A29FA289D2DB0001BDF64 /* LogIn */,
-				7D3A2BAA28E47A590006BB28 /* User.swift */,
-				7DEA808D28D9C74B00162939 /* FirestoreManager.swift */,
-				7DEA808F28D9C75800162939 /* SignUpManager.swift */,
-				7D3A2BA628E463540006BB28 /* LogActionsManager.swift */,
-				7DEA809528D9D20E00162939 /* UserManager.swift */,
+				7DEA809128D9C75C00162939 /* ChatAppTabBarController.swift */,
+				7DA1F9FC28AAD04500751497 /* Contacts */,
+				7DF5D02628E5AB7C005549CC /* InboxView */,
+				7DF5D02928E5B12B005549CC /* SettingsView */,
+				7DF5D02A28E5B157005549CC /* MessagesView */,
+				7DF5D02C28E5B1A5005549CC /* Model */,
+				7DF5D02B28E5B18D005549CC /* Manager */,
 				7DEA809328D9C84700162939 /* Constants.swift */,
 				7D3A2BAC28E47B0E0006BB28 /* Extensions.swift */,
 				7D0837542893E4280091E803 /* Main.storyboard */,
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
 				7D08375C2893E42E0091E803 /* Info.plist */,
+				7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */,
 			);
 			path = BROChat;
 			sourceTree = "<group>";
@@ -260,6 +265,59 @@
 				7DA1F9FA28AAD03800751497 /* ContactsTableViewCell.swift */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		7DF5D02628E5AB7C005549CC /* InboxView */ = {
+			isa = PBXGroup;
+			children = (
+				7DA1FA0328AC221D00751497 /* InboxCell.swift */,
+				7DA1F9FD28AC21BC00751497 /* InboxTableViewController.swift */,
+			);
+			path = InboxView;
+			sourceTree = "<group>";
+		};
+		7DF5D02928E5B12B005549CC /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				7D3A2BA828E479140006BB28 /* SettingsTableViewController.swift */,
+				7DF5D02F28E5B2F2005549CC /* AvatarView.swift */,
+				7DF5D03128E5B367005549CC /* LogOutCell.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		7DF5D02A28E5B157005549CC /* MessagesView */ = {
+			isa = PBXGroup;
+			children = (
+				7D4909C228AEC8BE00890131 /* MessageCell.swift */,
+				7D4909C028AEC7F700890131 /* MessageCreatorDelegate.swift */,
+				7D4909BE28AEC7E100890131 /* MessagesView.swift */,
+				7DA1FA0128AC220800751497 /* MessagesViewController.swift */,
+			);
+			path = MessagesView;
+			sourceTree = "<group>";
+		};
+		7DF5D02B28E5B18D005549CC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA809528D9D20E00162939 /* UserManager.swift */,
+				7D3A2BA628E463540006BB28 /* LogActionsManager.swift */,
+				7DEA808F28D9C75800162939 /* SignUpManager.swift */,
+				7DF5D02D28E5B221005549CC /* messageManager.swift */,
+				7DEA808D28D9C74B00162939 /* FirestoreManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7DF5D02C28E5B1A5005549CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DF5D02728E5ABFC005549CC /* Inbox.swift */,
+				7DCE8A5F28EB0EF600964253 /* UserStatus.swift */,
+				7D3A2BAA28E47A590006BB28 /* User.swift */,
+				7DF5D03328E5B409005549CC /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7DF6116C28BE058200CCF2A1 /* SignIn */ = {
@@ -381,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */,
-				7DEA809828DC919500162939 /* GoogleService-Info.plist in Resources */,
+				7DD9012928EED87600CFF8A2 /* GoogleService-Info.plist in Resources */,
 				7D0837582893E42E0091E803 /* Assets.xcassets in Resources */,
 				7D0837562893E4280091E803 /* Main.storyboard in Resources */,
 			);
@@ -514,12 +572,16 @@
 			files = (
 				7DEA809228D9C75C00162939 /* ChatAppTabBarController.swift in Sources */,
 				7D4909C128AEC7F700890131 /* MessageCreatorDelegate.swift in Sources */,
+				7DCE8A6028EB0EF700964253 /* UserStatus.swift in Sources */,
+				7DF5D02828E5ABFC005549CC /* Inbox.swift in Sources */,
 				7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */,
 				7DA1F9FB28AAD03800751497 /* ContactsTableViewCell.swift in Sources */,
 				7D0837532893E4280091E803 /* WelcomeViewController.swift in Sources */,
 				7D9A29FF28A11683001BDF64 /* WelcomeView.swift in Sources */,
+				7DF5D03228E5B367005549CC /* LogOutCell.swift in Sources */,
 				7D08374F2893E4280091E803 /* AppDelegate.swift in Sources */,
 				7DA1F9FE28AC21BC00751497 /* InboxTableViewController.swift in Sources */,
+				7DF5D03028E5B2F2005549CC /* AvatarView.swift in Sources */,
 				7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */,
 				7DEA809628D9D20E00162939 /* UserManager.swift in Sources */,
 				7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */,
@@ -531,10 +593,12 @@
 				7DEA809428D9C84700162939 /* Constants.swift in Sources */,
 				7DF6116E28BE067D00CCF2A1 /* SignUpView.swift in Sources */,
 				7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */,
+				7DF5D02E28E5B221005549CC /* messageManager.swift in Sources */,
 				7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */,
 				7D3A2BAD28E47B0F0006BB28 /* Extensions.swift in Sources */,
 				7D3A2BAB28E47A590006BB28 /* User.swift in Sources */,
 				7D3A2BA728E463540006BB28 /* LogActionsManager.swift in Sources */,
+				7DF5D03428E5B409005549CC /* Message.swift in Sources */,
 				7D3A2BA928E479140006BB28 /* SettingsTableViewController.swift in Sources */,
 				7D4909C328AEC8BE00890131 /* MessageCell.swift in Sources */,
 			);
