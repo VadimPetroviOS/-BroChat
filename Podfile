@@ -8,16 +8,8 @@ target 'BROChat' do
   # Pods for BROChat
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'SDWebImage'
-
-  target 'BROChatTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'BROChatUITests' do
-    # Pods for testing
-  end
 
 end

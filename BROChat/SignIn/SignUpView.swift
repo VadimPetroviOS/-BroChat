@@ -10,6 +10,7 @@ import UIKit
 
 protocol SignUpViewControllerDelegate: AnyObject {
     func presentPicker()
+    func closeAction()
     func signUpAction(userName: String, email: String, password: String)
 }
 
@@ -209,6 +210,10 @@ class SignUpView: UIView {
     
     @objc private func avatarTapped(_ gesture: UITapGestureRecognizer) {
         delegate?.presentPicker()
+    }
+    
+    @objc private func closeButtonTapped() {
+        delegate?.closeAction()
     }
     
     @objc private func signUpPressed() {

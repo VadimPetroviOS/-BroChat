@@ -13,7 +13,9 @@ class ContactsTableViewCell: UITableViewCell {
     
     var userInfo: User? {
         didSet {
+            print(userInfo)
             guard let userInfo = userInfo else { return }
+            
             userNameLabel.text = userInfo.userName
             avatarImage.loadImage(with: userInfo.profileImageUrl)
         }
