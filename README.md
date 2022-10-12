@@ -9,6 +9,5 @@
 ## На данный момент в проекте реализованно: <br>
 1. Форма авторизации и регистрации новых пользователей <br>
 
-![screen-gif](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true)
-
-![screen-gif](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/LogIn.gif?raw=true)
+![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true)
+![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/LogIn.gif?raw=true)
