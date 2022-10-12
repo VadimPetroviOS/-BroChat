@@ -5,3 +5,6 @@
 - FireBase - lля хранения данных, регистрации пользователей
 - Интерфейс приложения реализован через код
 - MVC - архитектурный паттерн проектирования
+
+##На данный момент в проекте реализованно:
+![image](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true)
