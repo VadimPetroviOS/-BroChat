@@ -9,8 +9,10 @@
 ## На данный момент в проекте реализованно: <br>
 1. Форма авторизации и регистрации новых пользователей <br>
 
-![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true)
-![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/LogIn.gif?raw=true)
+<p float="left">
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true" width="300" />
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/LogIn.gif?raw=true" width="300" /> 
+</p>
 
 2. Обмен сообщениями в общем чате <br>
 
@@ -25,8 +27,10 @@
 
 
 4. Отображение последней активности пользователя <br>
+<p float="left">
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/lastTime.png?raw=true" width="300" />
+</p>
 
-![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/lastTime.png?raw=true)
 
 
 
