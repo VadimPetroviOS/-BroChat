@@ -11,3 +11,8 @@
 
 ![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/SignUp.gif?raw=true)
 ![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/LogIn.gif?raw=true)
+
+1. Форма авторизации и регистрации новых пользователей <br>
+
+![picture](https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Message%20exchange.gif?raw=true)
+
