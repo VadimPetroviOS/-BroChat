@@ -20,9 +20,9 @@
 
 3. Отображение списка всех зарегестрированных пользователей. Отображение онлайн и оффлайн пользователей и обновление последних сообщений в реальном времени <br>
 <p float="left">
-  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Contacts.png?raw=true" width="300" />
-  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Chats.png?raw=true" width="300" /> 
-  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Settings.png?raw=true" width="300" />
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Contacts.png?raw=true" width="250" />
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Chats.png?raw=true" width="250" /> 
+  <img src="https://github.com/VadimPetroviOS/BroChat/blob/main/ReadmiAssets/Settings.png?raw=true" width="250" />
 </p>
 
 
