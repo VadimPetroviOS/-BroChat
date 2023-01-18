@@ -33,7 +33,7 @@
 		7DA1FA0228AC220800751497 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0128AC220800751497 /* MessagesViewController.swift */; };
 		7DA1FA0428AC221D00751497 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1FA0328AC221D00751497 /* InboxCell.swift */; };
 		7DCE8A6028EB0EF700964253 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE8A5F28EB0EF600964253 /* UserStatus.swift */; };
-		7DD9012928EED87600CFF8A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */; };
+		7DD9DFA82977C4E400E3FD40 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DD9DFA72977C4E400E3FD40 /* GoogleService-Info.plist */; };
 		7DE08F32289BAD7D00F03F94 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */; };
 		7DEA808E28D9C74B00162939 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808D28D9C74B00162939 /* FirestoreManager.swift */; };
 		7DEA809028D9C75800162939 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA808F28D9C75800162939 /* SignUpManager.swift */; };
@@ -101,7 +101,7 @@
 		7DA1FA0128AC220800751497 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		7DA1FA0328AC221D00751497 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
 		7DCE8A5F28EB0EF600964253 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatus.swift; sourceTree = "<group>"; };
-		7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7DD9DFA72977C4E400E3FD40 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7DE08F31289BAD7D00F03F94 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		7DEA808D28D9C74B00162939 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		7DEA808F28D9C75800162939 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 				7D0837572893E42E0091E803 /* Assets.xcassets */,
 				7D0837592893E42E0091E803 /* LaunchScreen.storyboard */,
 				7D08375C2893E42E0091E803 /* Info.plist */,
-				7DD9012828EED87600CFF8A2 /* GoogleService-Info.plist */,
+				7DD9DFA72977C4E400E3FD40 /* GoogleService-Info.plist */,
 			);
 			path = BROChat;
 			sourceTree = "<group>";
@@ -439,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D08375B2893E42E0091E803 /* LaunchScreen.storyboard in Resources */,
-				7DD9012928EED87600CFF8A2 /* GoogleService-Info.plist in Resources */,
+				7DD9DFA82977C4E400E3FD40 /* GoogleService-Info.plist in Resources */,
 				7D0837582893E42E0091E803 /* Assets.xcassets in Resources */,
 				7D0837562893E4280091E803 /* Main.storyboard in Resources */,
 			);
