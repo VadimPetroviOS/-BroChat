@@ -22,7 +22,6 @@ class AvatarView: UIView {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 20)
         label.textColor = .black
-        label.text = "Vika Perova"
         label.textAlignment = .center
         return label
     }()
